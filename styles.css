@@ -1,13 +1,290 @@
 body{
- background-color: lightblue;
- text-align: center;
- font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    outline: 0;
+    margin: 0;
+}
+a{
+    outline: none;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+/* Main Page */
+
+.main-page{
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-container .left-side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 12%;
+    animation-name: fromUp;
+    animation-duration: 1.5s;
+}
+
+.main-container .left-side .name{
+}
+
+.main-container .left-side .name span{
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.main-container .left-side .role{
+    margin-top: 10px;
+}
+
+.main-container .left-side .role span{
+    font-weight: 100;
+    font-size: 1rem;
+}
+.main-container .right-side{
+    width: 50%;
+}
+
+.main-container .right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation-name: fromLeft;
+    animation-duration: 1s;
+}
+
+.main-container .right-side .logo{
+    
+}
+
+.main-container .right-side .logo img{
+    height: 300px;
+    width: 300px;
+}
+
+/* Project Page */
+
+.project-page{
+    
+}
+
+.project-page .project-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-page .project-container .project-1{
+    width: 50vw;
+    height: 70vh;
+    margin-left: 12%;
+}
+
+.project-page .project-container .project-1 .project-title{
 
 }
-h1, p{
-color: white;
+
+.project-page .project-container .project-1 .project-description span{
+    font-size: 0.8rem;
+    font-weight: 200;
 }
-p{
-word-spacing: 0.1rem;
-font-size: 1.2 rem;
+
+.project-page .project-container .project-1 .project-image img{
+    height: 320px;
+    width: 380px;
+}
+
+.project-page .project-container .project-2{
+    margin-top: 80px;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.project-page .project-container .project-2 .project-2-wrapper{
+    width: 50vw;
+}
+.project-page .project-container .project-2 .project-title{
+
+}
+.project-page .project-container .project-2 .project-description {
+    margin-right: 12%;
+}
+.project-page .project-container .project-2 .project-description span{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.project-page .project-container .project-2 .project-image img{
+    height: 320px;
+    width: 380px;
+}
+
+.project-page .project-container .project-3{
+    margin-top: 100px;
+    height: 70vh;
+    width: 100vw;
+}
+
+.project-page .project-container .project-3 .project-3-wrapper{
+    margin-left: 12%;
+
+}
+
+.project-page .project-container .project-3 .project-title{ 
+
+}
+
+.project-page .project-container .project-3 .project-description span{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.project-page .project-container .project-3 .project-image img{
+    margin-top: 30px;
+    height: 320px;
+    width: 380px;
+}
+
+.project-page .project-container .project-4{
+    margin-top: 80px;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.project-page .project-container .project-4 .project-4-wrapper{
+    width: 50vw;
+}
+.project-page .project-container .project-4 .project-description {
+    margin-right: 12%;
+}
+
+.project-page .project-container .project-4 .project-title{
+
+}
+
+.project-page .project-container .project-4 .project-description span{
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.project-page .project-container .project-4 .project-image img{
+    margin-top: 30px;
+    height: 280px;
+    width: 380px;
+    border-radius: 10px;
+}
+
+/* About Page */
+
+.about-page{
+    height: 80vh;
+    width: 100vw;
+}
+
+.about-heading{
+    margin-top: 20%;
+}
+.about-heading h2{
+    text-transform: uppercase;
+}
+
+.about-content{
+
+}
+.about-wrapper{
+    margin-right: 22%;
+    margin-left: 12%;
+}
+.about-content span{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+/* Contact Page */
+
+.contact-page{
+    background-color: black;
+    height: 30vh;
+}
+
+.contact-wrapper{
+    
+}
+
+.contact-title{
+    margin-left: 12%;
+}
+
+.contact-title h2{
+    padding-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    color: white
+}
+
+.contact-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact-items .contact-items-wrapper{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.contact-items .contact-items-wrapper .linkedin img{
+    height: 25px;
+    width: 25px;
+}
+
+.contact-items .contact-items-wrapper .github img{
+    height: 23px;
+    width: 25px;
+}
+
+.contact-items .contact-items-wrapper .gmail img{
+    height: 25px;
+    width: 25px;
+}
+
+@keyframes fromUp {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes fromLeft {
+    0%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
 }
